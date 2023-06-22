@@ -74,7 +74,7 @@ header {
 }
 
 .about-education {
-  background: #000;
+  background: url("imeges/LINE1.png");
   margin-top: 4.4rem;
 }
 
@@ -112,7 +112,7 @@ header {
 }
 
 .about-work {
-  background: #ffffff;
+  background: url("imeges/LINE2.png");
 }
 .title-dark {
   color: #000;
@@ -127,7 +127,7 @@ header {
 }
 
 .about-side-job {
-  background: #ffffff;
+  background: url("imeges/LINE3.png");
 }
 
 .hero {
@@ -145,13 +145,13 @@ header {
 
 @media screen and (max-width: 530px) {
   .about-education {
-    background: #000;
+    background: url("imeges/LINE1.png");
   }
   .about-work {
-    background: #ffffff;
+    background: url("imeges/LINE2.png");
   }
   .about-side-job {
-    background: #ffffff;
+    background: url("imeges/LINE3.png");
   }
   .hero {
     height: 50rem;
@@ -277,4 +277,64 @@ header {
   .nav-list-dekstop .nav-item:nth-child(6) {
     border-bottom: none;
   }
+}
+
+form {
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding-bottom: 2em;
+  font-size: 1.5rem;
+}
+
+fieldset {
+  border: none;
+  padding: 2rem 0;
+  border-bottom: 3px solid #000;
+}
+
+fieldset:last-of-type {
+  border-bottom: none;
+}
+
+label {
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input,
+textarea,
+select {
+  margin: 10px 0 0 0;
+  width: 100%;
+  min-height: 2em;
+}
+
+input,
+textarea {
+  background-color: #000;
+  border: 1px solid #000;
+  color: #ffffff;
+}
+
+.inline {
+  width: unset;
+  margin: 0 0.5em 0 0;
+  vertical-align: middle;
+}
+
+input[type="submit"] {
+  display: block;
+  width: 60%;
+  margin: 1em auto;
+  height: 2em;
+  font-size: 1.9rem;
+  background-color: #000;
+  border-color: white;
+  min-width: 300px;
+}
+
+input[type="file"] {
+  padding: 1px 2px;
 }
