@@ -74,7 +74,7 @@ header {
 }
 
 .about-education {
-  background: url("imeges/hero/iphone_11_pro_large.jpg");
+  background: #000;
   margin-top: 4.4rem;
 }
 
@@ -107,16 +107,12 @@ header {
   display: inline-block;
 }
 
-.cta-link:nth-child(2) {
-  margin-left: 2.6rem;
-}
-
 .cta-link:hover {
   border-bottom: 2px solid #66bbff;
 }
 
 .about-work {
-  background: url("imeges/hero/iphone_11_large.jpg");
+  background: #ffffff;
 }
 .title-dark {
   color: #000;
@@ -131,7 +127,7 @@ header {
 }
 
 .about-side-job {
-  background: url("imeges/hero/watch_large.jpg");
+  background: #ffffff;
 }
 
 .hero {
@@ -149,13 +145,13 @@ header {
 
 @media screen and (max-width: 530px) {
   .about-education {
-    background: url("imeges/hero/iphone_11_pro_small.jpg");
+    background: #000;
   }
   .about-work {
-    background: url("imeges/hero/iphone_11_small.jpg");
+    background: #ffffff;
   }
   .about-side-job {
-    background: url("imeges/hero/watch_small.jpg");
+    background: #ffffff;
   }
   .hero {
     height: 50rem;
@@ -168,9 +164,6 @@ header {
   }
   .title-sub-heading {
     font-size: 1.9rem;
-  }
-  .cta-link:nth-child(2) {
-    margin-left: 2rem;
   }
   header {
     height: 4.8rem;
@@ -262,5 +255,26 @@ header {
     width: 0;
     height: 0;
     display: block;
+    padding: 10.5rem 5rem;
+    z-index: 1000;
+    box-sizing: border-box;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+  }
+
+  .active .nav-list-dekstop {
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    visibility: visible;
+  }
+  .nav-list-dekstop .nav-item {
+    width: 100%;
+    justify-content: flex-start;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+  }
+  .nav-list-dekstop .nav-item:nth-child(6) {
+    border-bottom: none;
   }
 }
