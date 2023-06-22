@@ -281,8 +281,8 @@ header {
 
 form {
   width: 60vw;
-  max-width: 500px;
-  min-width: 300px;
+  max-width: 98rem;
+  min-width: 54rem;
   margin: 0 auto;
   padding-bottom: 2em;
   font-size: 1.5rem;
