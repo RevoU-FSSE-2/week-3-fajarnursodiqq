@@ -281,61 +281,96 @@ header {
 }
 
 form {
-  width: 60vw;
-  max-width: 31rem;
-  min-width: 18rem;
-  margin: 0 auto;
-  padding-bottom: 2em;
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  place-items: center;
+  overflow: hidden;
   font-size: 1.5rem;
 }
 
-fieldset {
-  border: none;
-  padding: 2rem 0;
-  border-bottom: 3px solid #000;
-}
-
-fieldset:last-of-type {
-  border-bottom: none;
-}
-
-label {
+.personal-information {
+  position: relative;
+  width: 40rem;
+  height: 35rem;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #ecf0f3, -14px -14px 20px #ffffff;
+  text-align: center;
+  margin-top: 30px;
   display: block;
-  margin: 0.5rem 0;
 }
 
-input,
-textarea,
-select {
-  margin: 10px 0 0 0;
+.first-name,
+.last-name,
+.email,
+.password {
+  display: block;
   width: 100%;
-  min-height: 2em;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
 }
 
-input,
-textarea {
-  background-color: #000;
-  border: 1px solid #000;
-  color: #ffffff;
+.personal-information input {
+  background-color: #ecf0f3;
+  margin: 10px 0 0 0;
+  padding: 0.6rem;
+  height: 2rem;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 30px;
+  box-shadow: 6px 6px 6px #ecf0f3, inset -6px -6px 6px #ffffff;
 }
 
-.inline {
-  width: unset;
-  margin: 0 0.5em 0 0;
-  vertical-align: middle;
+.subscription-purpose {
+  position: relative;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 6px 6px 6px #ecf0f3, inset -6px -6px 6px #ffffff;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
-input[type="submit"] {
-  display: block;
-  width: 60%;
-  margin: 1em auto;
-  height: 2em;
-  font-size: 1.9rem;
-  background-color: #000;
-  border-color: white;
-  min-width: 18rem;
+.subscription-terms-conditions {
+  position: relative;
+  width: 40rem;
+  height: 10rem;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 6px 6px 6px #ecf0f3, inset -6px -6px 6px #ffffff;
+  text-align: center;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
 }
 
-input[type="file"] {
-  padding: 1px 2px;
+.avatar,
+.referrer,
+.brief-case {
+  position: relative;
+  width: 40rem;
+  height: 12rem;
+  border-radius: 20px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #ecf0f3;
+  box-shadow: 14px 14px 20px #ecf0f3, -14px -14px 20px #ffffff;
+  text-align: left;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
 }
