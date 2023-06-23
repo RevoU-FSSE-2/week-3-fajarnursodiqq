@@ -1,32 +1,27 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/6H2sAzcR)
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/l9v8sNrv)
 
-# Fajar Nursodiq Website <a href="https://fajarnursodiqq.netlify.app/">link</a>
+# Open With Mobile Phone for best Experience <a href="https://fajarnursodiqq-2.netlify.app//">link</a>
 
-This is a simple website for showcasing the profile of Fajar Nursodiq
+## Fajar Nursodiq's Personal Website
+
+This is a personal website for Fajar Nursodiq, showcasing his education, work experience, and side job. The website is built using HTML and CSS.
 
 ## Table of Contents
 
 - [Description](#description)
-- [Usage](#usage)
+- [Features](#features)
+- [Getting Started](#getting-started)
+- [License](#license)
 
 ## Description
 
-The website is built using HTML, CSS, and JavaScript. It consists of the following sections:
+This website serves as a portfolio for Fajar Nursodiq. It provides information about his education, work experience, and side job. The website has multiple sections, including an about section, education section, work section, side job section, and a subscription form.
 
-- **Navbar**: A navigation bar at the top of the page with a logo and navigation links.
-- **Hero**: The main section of the page with a brief introduction and a profile picture.
-- **Subscribe**: A section where users can enter their email to subscribe.
-- **Footer**: The footer section with copyright information.
+## Features
 
-## Usage
-
-Feel free to modify the website to showcase your own profile or make any desired changes. You can customize the content, styling, and add additional sections as needed.
-
-The main files and directories in the project are:
-
-- `index.html`: The main HTML file that contains the structure of the website.
-- `style.css`: The CSS file that defines the styles for the website.
-- `script.js`: The JavaScript file that contains the dark mode functionality.
-
-Make sure to update the images in the `images` directory with your own profile picture and any other images you want to use.
+- Responsive design for various screen sizes
+- Navigation menu with links to different sections of the website
+- Sections for education, work, and side job with descriptions
+- Subscription form for users to fill out with their information
+- Stylish and modern design
