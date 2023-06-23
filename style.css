@@ -142,28 +142,6 @@ header {
   border-top: none;
 }
 
-.container-figure {
-  max-width: 98rem;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 2.2rem;
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.container-figure img {
-  width: 30%;
-  margin: auto;
-  border-radius: 30px;
-  padding: 10px;
-  box-sizing: border-box;
-  background-color: rgba(209, 212, 223, 0.1);
-  box-shadow: 4px 4px 10px #d1d4df, -4px -4px 10px #ffffff;
-  margin-top: 30px;
-}
-
 @media screen and (max-width: 530px) {
   .about-education {
     background: url("imeges/LINE1.png");
@@ -259,7 +237,7 @@ header {
   }
   .nav-link-bag {
     width: 1.6rem;
-    height: 4.8rem;
+    height: 3.8rem;
     position: relative;
     transition: opacity 3s;
   }
@@ -308,15 +286,13 @@ header {
     place-items: center;
     font-size: 1.5rem;
   }
+
   .container-figure {
-    max-width: 73.6rem;
     width: 100%;
-    margin: 0 auto;
-    padding: 0 2.2rem;
+    max-width: 73.6rem;
     position: relative;
     display: flex;
     flex-direction: column;
-    max-width: 73.6rem;
     align-items: center;
     justify-content: space-between;
     place-items: center;
@@ -346,7 +322,7 @@ form {
 
 .personal-information {
   position: relative;
-  width: 40rem;
+  width: 100%;
   height: 35rem;
   margin: auto;
   border-radius: 30px;
@@ -383,7 +359,7 @@ form {
 
 .subscription-purpose {
   position: relative;
-  width: 40rem;
+  width: 100%;
   height: 10rem;
   margin: auto;
   border-radius: 30px;
@@ -399,7 +375,7 @@ form {
 
 .subscription-terms-conditions {
   position: relative;
-  width: 40rem;
+  width: 100%;
   height: 10rem;
   margin: auto;
   border-radius: 30px;
@@ -416,13 +392,13 @@ form {
 .avatar,
 .referrer {
   position: relative;
-  width: 40rem;
+  width: 100%;
   height: 12rem;
   margin: auto;
   border-radius: 30px;
   padding: 40px;
   box-sizing: border-box;
-  background-color: rgba(209, 212, 223, 0.1);
+  background-color: rgba(133, 140, 165, 0.1);
   box-shadow: 14px 14px 20px #ecf0f3, -14px -14px 20px #ffffff;
   text-align: left;
   margin-top: 30px;
@@ -432,7 +408,7 @@ form {
 
 .brief-case {
   position: relative;
-  width: 40rem;
+  width: 100%;
   height: 20rem;
   margin: auto;
   border-radius: 30px;
