@@ -163,7 +163,7 @@ html {
   .hero {
     width: auto;
     height: 50rem;
-    padding-top: 4.5rem;
+    padding-top: 5rem;
   }
   .grid-container {
     box-sizing: border-box;
@@ -171,7 +171,7 @@ html {
     height: 50rem;
     background-color: var(--secondbutton);
     padding: 1rem;
-    border-radius: 5%;
+    border-radius: 32px;
     align-items: center;
     justify-content: center;
     display: flex;
