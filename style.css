@@ -16,6 +16,7 @@ html {
   font-family: "Inter", sans-serif;
   font-size: 12px;
   background-color: var(--background);
+  color: var(--list);
 }
 
 .container {
@@ -108,7 +109,7 @@ html {
 
   header.active {
     height: 100%;
-    background-color: var(--firstbutton);
+    background-color: var(--background);
   }
 
   .active .mobile-menu {
@@ -156,5 +157,39 @@ html {
     margin: 1rem;
     justify-content: flex-start;
     font-weight: 700;
+  }
+
+  .hero {
+    height: 50rem;
+    padding-top: 7rem;
+  }
+
+  .about-education {
+    background-color: var(--firstbutton);
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title-heading {
+    font-size: 3.2rem;
+    line-height: 1;
+    letter-spacing: -0.005rem;
+  }
+
+  .title-sub-heading {
+    font-size: 1.9rem;
+    letter-spacing: 0.008rem;
+  }
+
+  .cta {
+    margin-top: 1rem;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+  cta-link {
+    color: var(--firstbutton);
+    display: inline-block;
   }
 }
