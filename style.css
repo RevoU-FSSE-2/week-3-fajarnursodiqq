@@ -150,7 +150,7 @@ html {
     width: 100%;
     height: 100%;
     opacity: 1;
-    transition: opacity 0.8s cubic-bezier(0.32, 0.08, 0.24, 1);
+    transition: opacity 2s cubic-bezier(0.32, 0.08, 0.24, 1);
     visibility: visible;
   }
 
@@ -161,10 +161,34 @@ html {
   }
 
   .hero {
+    width: auto;
     height: 50rem;
-    padding-top: 7rem;
+    padding-top: 4.5rem;
+  }
+  .grid-container {
+    box-sizing: border-box;
+    width: auto;
+    height: 50rem;
+    background-color: var(--secondbutton);
+    padding: 1rem;
+    border-radius: 5%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column-reverse;
   }
 
+  .grid-tile-container {
+    box-sizing: border-box;
+    width: auto;
+    gap: 5px;
+    height: 20px;
+    background-color: var(--firstbutton);
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5%;
+  }
+  /*
   .about-education {
     background-color: var(--firstbutton);
   }
@@ -192,5 +216,20 @@ html {
   cta-link {
     color: var(--firstbutton);
     display: inline-block;
+  }*/
+
+  /*form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
   }
+  .name {
+    flex: 1 0 130px;
+  }
+  .email {
+    flex: 1 0 130px;
+  }
+  button {
+    flex: 1 0 40px;
+  }*/
 }
