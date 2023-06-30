@@ -222,22 +222,22 @@ html {
 
   .about-education {
     background: url("imeges/My\ project-1\ \(17\).png");
-    background-size: 400% auto;
-    background-position-y: 54%;
+    background-size: 350% auto;
+    background-position-y: 57%;
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
   .about-work {
     background: url("imeges/My\ project-1\ \(15\).png");
-    background-size: 400% auto;
+    background-size: 300% auto;
     background-position-y: 50%;
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
   .about-side-job {
     background: url("imeges/My\ project-1\ \(16\).png");
-    background-size: 600% auto;
-    background-position-y: 53.5%;
+    background-size: 480% auto;
+    background-position-y: 56%;
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
@@ -259,7 +259,7 @@ html {
   }
 
   .title-sub-heading {
-    font-size: 1.9rem;
+    font-size: 1.6rem;
     letter-spacing: 0.008rem;
   }
 
