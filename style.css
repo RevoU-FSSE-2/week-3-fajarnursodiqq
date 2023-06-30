@@ -168,13 +168,15 @@ html {
 
   .slider-wrapper {
     position: relative;
-    max-width: 30rem;
+    width: auto;
+    max-height: 50rem;
     margin: 0 auto;
   }
 
   .slider {
     display: flex;
-    aspect-ratio: 9/16;
+    aspect-ratio: 3/4;
+    border-radius: 32px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
