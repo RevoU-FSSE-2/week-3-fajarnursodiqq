@@ -611,7 +611,7 @@ footer {
 
   .grid-container {
     display: grid;
-    margin: -4rem 0;
+    margin: -4rem 2.2rem;
     width: auto;
     height: 47rem;
     grid-template-rows: repeat(10, 5rem);
