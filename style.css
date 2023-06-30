@@ -280,9 +280,13 @@ html {
     font-size: 1.6rem;
     text-align: center;
     text-shadow: 0.5px 0.5px 1px var(--secondbutton);
-
     color: var(--background);
   }
+
+  .cta:hover {
+    background-color: var(--secondbutton);
+  }
+
   .cta-link {
     color: var(--background);
     display: inline-block;
@@ -416,5 +420,14 @@ html {
 
   button:hover {
     opacity: 1;
+  }
+  .picture-scrset img {
+    margin-top: 15rem;
+    width: 100%;
+    height: auto;
+  }
+
+  footer {
+    text-align: center;
   }
 }
