@@ -28,15 +28,323 @@ html {
   color: var(--list);
 }
 
-/*.hero {
-  width: auto;
-  height: 50rem;
-}*/
-
 .container {
   max-width: 100rem;
   margin: 0 auto;
   padding: 0 2.2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: var(--background);
+  transition: background 0.4s cubic-bezier(0.32, 0.08, 0.24, 1),
+    height 0.6s cubic-bezier(0.32, 0.08, 0.24, 1);
+  z-index: 1500;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 -1rem;
+}
+
+.nav-list-mobile {
+  display: none;
+}
+.nav-link-impulsive {
+  width: auto;
+  height: 3rem;
+  position: relative;
+  z-index: 1500;
+}
+.nav-link-moon {
+  width: auto;
+  height: 2rem;
+  position: relative;
+  z-index: 1500;
+}
+
+.nav-link {
+  font-size: 1.7rem;
+  padding: 0;
+  margin: 0.5rem 0;
+  color: var(--list);
+  transition: opacity 0.5s;
+}
+
+.nav-link:hover {
+  opacity: 0.7;
+}
+
+.slider-wrapper {
+  position: relative;
+  margin: 0 auto;
+}
+
+.carousel {
+  padding-top: 5rem;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 1/1;
+  border-radius: 32px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 5px 5px 10px var(--secondbutton);
+}
+
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1000;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: var(--background);
+  opacity: 0.75;
+  transition: opacity ease 0.4s;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+.about-education {
+  background: url("imeges/My\ project-1\ \(17\).png");
+  background-size: 350% auto;
+  background-position-y: 57%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+.about-work {
+  background: url("imeges/My\ project-1\ \(15\).png");
+  background-size: 300% auto;
+  background-position-y: 50%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+.about-side-job {
+  background: url("imeges/My\ project-1\ \(16\).png");
+  background-size: 480% auto;
+  background-position-y: 56%;
+  background-position-x: 50%;
+  background-repeat: no-repeat;
+}
+
+.hero {
+  height: 70rem;
+}
+
+.title {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.title-heading {
+  font-size: 3.2rem;
+  line-height: 1;
+  letter-spacing: -0.005rem;
+  text-shadow: 1px 1px 3px var(--secondbutton);
+}
+
+.title-sub-heading {
+  font-size: 1.6rem;
+  letter-spacing: 0.008rem;
+}
+
+.cta {
+  background-color: var(--firstbuttontransparant);
+  box-shadow: 2px 2px 10px var(--secondbutton);
+  padding: 13px;
+  border-radius: 32px;
+  margin-top: 25rem;
+  font-size: 1.6rem;
+  text-align: center;
+  text-shadow: 0.5px 0.5px 1px var(--secondbutton);
+  color: var(--background);
+}
+
+.cta:hover {
+  background-color: var(--secondbutton);
+}
+
+.cta-link {
+  color: var(--background);
+  display: inline-block;
+}
+
+.cta-link:visited {
+  color: var(--background);
+}
+
+.grid-container {
+  display: grid;
+  margin: -4rem 2.2rem;
+  width: auto;
+  height: 47rem;
+  grid-template-rows: repeat(10, 5rem);
+  grid-template-columns: auto auto;
+  background-color: var(--background);
+  box-shadow: 5px 5px 10px var(--secondbutton);
+  border-radius: 32px;
+  text-align: center;
+  color: var(--background);
+  align-content: start;
+  gap: 1rem;
+  padding: 1rem;
+}
+
+.grid-container > div {
+  border-radius: 32px;
+}
+
+.grid-container-mini > div {
+  border-radius: 16px;
+}
+
+.grid-container :nth-child(1) {
+  background-color: var(--firstbuttontransparant);
+  grid-row: 1 / span 3;
+}
+.grid-container :nth-child(2) {
+  grid-row: 1 / span 2;
+  background-color: var(--firstbuttontransparant);
+}
+.grid-container :nth-child(3) {
+  grid-row: 3 / span 3;
+  background-color: var(--firstbuttontransparant);
+}
+.grid-container :nth-child(4) {
+  grid-row: 4 / span 3;
+  background-color: var(--firstbuttontransparant);
+}
+
+.grid-container-mini {
+  display: grid;
+  height: 11rem;
+  gap: 1rem;
+  grid-template-rows: repeat(4, 2rem);
+  grid-template-columns: auto auto;
+  background-color: var(--firstbuttontransparant);
+}
+.grid-container-mini :nth-child(1) {
+  grid-row: 1 / span 2;
+  background-color: var(--firstbutton);
+}
+.grid-container-mini :nth-child(2) {
+  grid-row: 1 / span 2;
+  background-color: var(--firstbutton);
+}
+.grid-container-mini :nth-child(3) {
+  grid-row: 3 / span 2;
+  background-color: var(--firstbutton);
+}
+.grid-container-mini :nth-child(4) {
+  grid-row: 3 / span 2;
+  background-color: var(--firstbutton);
+}
+.grid-container :nth-child(6) {
+  background-color: var(--firstbuttontransparant);
+  grid-row: 6 / span 3;
+}
+
+form {
+  color: var(--list);
+}
+
+fieldset {
+  border: none;
+}
+
+.form-input {
+  margin-top: 2rem;
+  width: auto;
+  height: 45rem;
+  border-radius: 32px;
+  background-color: var(--background);
+  box-shadow: 5px 5px 10px var(--secondbutton);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem;
+}
+
+.personal-information input,
+.brief-case input {
+  background-color: var(--firstbuttontransparant);
+  padding: 0.6rem;
+  height: 1.5rem;
+  width: 95%;
+  font-size: 14px;
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  color: var(--background);
+  margin-bottom: 1rem;
+  box-shadow: 2px 2px 2px var(--secondbutton);
+}
+
+.submit {
+  width: 100%;
+}
+button {
+  margin-top: 2rem;
+  position: relative;
+  width: 100%;
+  height: 4rem;
+  border-radius: 32px;
+  text-shadow: 0.5px 0.5px 1px var(--secondbutton);
+  color: var(--background);
+  background-color: var(--firstbutton);
+  border: none;
+  box-shadow: 2px 2px 10px var(--secondbutton);
+}
+
+button:hover {
+  opacity: 1;
+}
+.picture-scrset img {
+  margin-top: 15rem;
+  width: 100%;
+  height: auto;
+}
+
+footer {
+  text-align: center;
 }
 
 @media screen and (max-width: 530px) {
@@ -144,6 +452,12 @@ html {
     font-size: 1.7rem;
     padding: 0;
     margin: auto 0;
+    color: var(--list);
+    transition: opacity 0.5s;
+  }
+
+  .nav-link:hover {
+    opacity: 0.7;
   }
 
   .nav-list-desktop {
@@ -230,21 +544,21 @@ html {
 
   .about-education {
     background: url("imeges/My\ project-1\ \(17\).png");
-    background-size: 350% auto;
+    background-size: 70rem auto;
     background-position-y: 57%;
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
   .about-work {
     background: url("imeges/My\ project-1\ \(15\).png");
-    background-size: 300% auto;
+    background-size: auto 75rem;
     background-position-y: 50%;
     background-position-x: 50%;
     background-repeat: no-repeat;
   }
   .about-side-job {
     background: url("imeges/My\ project-1\ \(16\).png");
-    background-size: 480% auto;
+    background-size: auto 75rem;
     background-position-y: 56%;
     background-position-x: 50%;
     background-repeat: no-repeat;
