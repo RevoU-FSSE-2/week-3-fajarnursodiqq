@@ -159,12 +159,14 @@ html {
     justify-content: flex-start;
     font-weight: 700;
   }
+  section {
+    padding-top: 5rem;
+  }
 
   .hero {
     width: auto;
     height: 50rem;
     background-color: aqua;
-    padding-top: 5rem;
   }
 
   .slider-wrapper {
