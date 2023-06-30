@@ -8,7 +8,7 @@
 :root {
   --background: rgb(234, 236, 240);
   --firstbutton: rgb(87, 86, 187);
-  --firstbuttontransparant: rgba(87, 86, 187, 1);
+  --firstbuttontransparant: rgba(87, 86, 187, 0.7);
   --secondbutton: rgb(109, 117, 134);
   --list: rgb(16, 24, 40);
 }
@@ -282,6 +282,76 @@ html {
 
   .cta-link:visited {
     color: var(--background);
+  }
+
+  .grid-container {
+    display: grid;
+    margin: 0 2.2rem;
+    width: auto;
+    height: 47rem;
+    grid-template-rows: repeat(10, 5rem);
+    grid-template-columns: auto auto;
+    background-color: var(--background);
+    box-shadow: 5px 5px 10px var(--secondbutton);
+    border-radius: 32px;
+    text-align: center;
+    align-content: start;
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .grid-container > div {
+    border-radius: 32px;
+  }
+
+  .grid-container-mini > div {
+    border-radius: 16px;
+  }
+
+  .grid-container :nth-child(1) {
+    background-color: var(--firstbuttontransparant);
+    grid-row: 1 / span 3;
+  }
+  .grid-container :nth-child(2) {
+    grid-row: 1 / span 2;
+    background-color: var(--firstbuttontransparant);
+  }
+  .grid-container :nth-child(3) {
+    grid-row: 3 / span 3;
+    background-color: var(--firstbuttontransparant);
+  }
+  .grid-container :nth-child(4) {
+    grid-row: 4 / span 3;
+    background-color: var(--firstbuttontransparant);
+  }
+
+  .grid-container-mini {
+    display: grid;
+    height: 11rem;
+    gap: 1rem;
+    grid-template-rows: repeat(4, 2rem);
+    grid-template-columns: auto auto;
+    background-color: var(--firstbuttontransparant);
+  }
+  .grid-container-mini :nth-child(1) {
+    grid-row: 1 / span 2;
+    background-color: var(--firstbutton);
+  }
+  .grid-container-mini :nth-child(2) {
+    grid-row: 1 / span 2;
+    background-color: var(--firstbutton);
+  }
+  .grid-container-mini :nth-child(3) {
+    grid-row: 3 / span 2;
+    background-color: var(--firstbutton);
+  }
+  .grid-container-mini :nth-child(4) {
+    grid-row: 3 / span 2;
+    background-color: var(--firstbutton);
+  }
+  .grid-container :nth-child(6) {
+    background-color: var(--firstbuttontransparant);
+    grid-row: 6 / span 3;
   }
 
   /*form {
