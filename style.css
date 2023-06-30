@@ -165,29 +165,50 @@ html {
     height: 50rem;
     padding-top: 5rem;
   }
-  .grid-container {
-    box-sizing: border-box;
-    width: auto;
-    height: 50rem;
-    background-color: var(--secondbutton);
-    padding: 1rem;
-    border-radius: 32px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column-reverse;
+
+  .slider-wrapper {
+    position: relative;
+    max-width: 30rem;
+    margin: 0 auto;
   }
 
-  .grid-tile-container {
-    box-sizing: border-box;
-    width: auto;
-    gap: 5px;
-    height: 20px;
-    background-color: var(--firstbutton);
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5%;
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
   }
+
+  .slider img {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+
+  .slider-nav {
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1500;
+  }
+
+  .slider-nav a {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color: #fff;
+    opacity: 0.75;
+    transition: opacity ease 0.4s;
+  }
+
+  .slider-nav a:hover {
+    opacity: 1;
+  }
+
   /*
   .about-education {
     background-color: var(--firstbutton);
