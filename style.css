@@ -167,6 +167,7 @@ html {
   }
 
   .slider-wrapper {
+    padding: 1rem;
     position: relative;
     width: auto;
     max-height: 50rem;
@@ -175,7 +176,7 @@ html {
 
   .slider {
     display: flex;
-    aspect-ratio: 9/16;
+    aspect-ratio: 3/4;
     border-radius: 32px;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -213,7 +214,6 @@ html {
     opacity: 1;
   }
 
-  /*
   .about-education {
     background-color: var(--firstbutton);
   }
@@ -241,7 +241,7 @@ html {
   cta-link {
     color: var(--firstbutton);
     display: inline-block;
-  }*/
+  }
 
   /*form {
     display: flex;
