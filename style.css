@@ -19,6 +19,11 @@ html {
   color: var(--list);
 }
 
+.hero {
+  width: auto;
+  height: 50rem;
+}
+
 .container {
   max-width: 100rem;
   margin: 0 auto;
@@ -159,18 +164,14 @@ html {
     justify-content: flex-start;
     font-weight: 700;
   }
-  section {
-    padding-top: 5rem;
-  }
-
-  .hero {
-    width: auto;
-    height: 50rem;
-  }
 
   .slider-wrapper {
     position: relative;
     margin: 0 auto;
+  }
+
+  .carousel {
+    padding-top: 5rem;
   }
 
   .slider {
@@ -219,11 +220,17 @@ html {
   }
 
   .about-education {
-    background-color: var(--firstbutton);
+    background: url("imeges/LINE1.png");
+    height: 50rem;
+    background-size: auto 54rem;
+    background-position: center;
+    background-repeat: no-repeat;
   }
 
   .title {
+    padding-top: 5rem;
     text-align: center;
+    color: var(--background);
   }
 
   .title-heading {
