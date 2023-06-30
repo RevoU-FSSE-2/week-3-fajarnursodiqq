@@ -13,6 +13,14 @@
   --list: rgb(16, 24, 40);
 }
 
+.darkmode {
+  --background: rgb(234, 236, 240);
+  --firstbutton: rgb(16, 24, 40);
+  --firstbuttontransparant: rgba(16, 24, 40, 0.7);
+  --secondbutton: rgb(109, 117, 134);
+  --list: rgb(16, 24, 40);
+}
+
 html {
   font-family: "Inter", sans-serif;
   font-size: 12px;
@@ -295,6 +303,7 @@ html {
     box-shadow: 5px 5px 10px var(--secondbutton);
     border-radius: 32px;
     text-align: center;
+    color: var(--background);
     align-content: start;
     gap: 1rem;
     padding: 1rem;

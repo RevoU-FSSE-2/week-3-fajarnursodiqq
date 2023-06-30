@@ -20,6 +20,7 @@
           <ul class="nav-list nav-list-mobile">
             <li class="nav-item">
               <img
+                id="icon"
                 src="imeges/moon.png"
                 class="nav-link nav-link-moon"
                 alt="moon logo"
@@ -78,6 +79,7 @@
             </li>
             <li class="nav-item nav-items-hidden">
               <img
+                id="icon"
                 src="imeges/moon.png"
                 class="nav-link nav-link-moon"
                 alt="moon logo"
@@ -185,6 +187,17 @@
       <button>Submit</button>
     </form>
     <script src="script.js"></script>
+    <script>
+      let icon = document.getElementById("icon");
+      icon.onclick = function () {
+        document.body.classList.toggle("darkmode");
+        if (document.body.classList.contains("darkmode")) {
+          icon.src = "imeges/sun.svg";
+        } else {
+          icon.src = "imeges/moon.png";
+        }
+      };
+    </script>
   </body>
   <!--<footer class="footer">
     &copy; <em id="date"></em>Copyright 2023 - Fajar Nursodiq
