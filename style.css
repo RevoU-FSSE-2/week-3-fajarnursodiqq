@@ -219,18 +219,20 @@ html {
     opacity: 1;
   }
 
-  .about-education {
-    background: url("imeges/LINE1.png");
+  .island-box {
+    width: auto;
     height: 50rem;
-    background-size: auto 54rem;
-    background-position: center;
-    background-repeat: no-repeat;
+    border-radius: 32px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 10px var(--secondbutton);
+  }
+  .about-education {
+    background-color: var(--firstbutton);
   }
 
   .title {
     padding-top: 5rem;
     text-align: center;
-    color: var(--background);
   }
 
   .title-heading {
