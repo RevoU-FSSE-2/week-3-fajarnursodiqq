@@ -16,7 +16,7 @@
 .darkmode {
   --background: rgb(234, 236, 240);
   --firstbutton: rgb(16, 24, 40);
-  --firstbuttontransparant: rgba(16, 24, 40, 0.7);
+  --firstbuttontransparant: rgba(16, 24, 40, 1);
   --secondbutton: rgb(109, 117, 134);
   --list: rgb(16, 24, 40);
 }
@@ -294,7 +294,7 @@ html {
 
   .grid-container {
     display: grid;
-    margin: 0 2.2rem;
+    margin: -4rem 2.2rem;
     width: auto;
     height: 47rem;
     grid-template-rows: repeat(10, 5rem);
@@ -363,18 +363,58 @@ html {
     grid-row: 6 / span 3;
   }
 
-  /*form {
+  form {
+    color: var(--list);
+  }
+
+  fieldset {
+    border: none;
+  }
+
+  .form-input {
+    margin-top: 2rem;
+    width: auto;
+    height: 45rem;
+    border-radius: 32px;
+    background-color: var(--background);
+    box-shadow: 5px 5px 10px var(--secondbutton);
     display: flex;
     flex-wrap: wrap;
-    gap: 6px;
+    padding: 1rem;
   }
-  .name {
-    flex: 1 0 130px;
+
+  .personal-information input,
+  .brief-case input {
+    background-color: var(--firstbuttontransparant);
+    padding: 0.6rem;
+    height: 1.5rem;
+    width: 95%;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    text-align: center;
+    color: var(--background);
+    margin-bottom: 1rem;
+    box-shadow: 2px 2px 2px var(--secondbutton);
   }
-  .email {
-    flex: 1 0 130px;
+
+  .submit {
+    width: 100%;
   }
   button {
-    flex: 1 0 40px;
-  }*/
+    margin-top: 2rem;
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    border-radius: 32px;
+    text-shadow: 0.5px 0.5px 1px var(--secondbutton);
+    color: var(--background);
+    background-color: var(--firstbutton);
+    border: none;
+    box-shadow: 2px 2px 10px var(--secondbutton);
+  }
+
+  button:hover {
+    opacity: 1;
+  }
 }
