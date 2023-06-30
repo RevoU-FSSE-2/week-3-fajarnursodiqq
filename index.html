@@ -20,7 +20,7 @@
           <ul class="nav-list nav-list-mobile">
             <li class="nav-item">
               <img
-                id="icon"
+                id="icon1"
                 src="imeges/moon.png"
                 class="nav-link nav-link-moon"
                 alt="moon logo"
@@ -43,9 +43,10 @@
           <ul class="nav-list nav-list-desktop">
             <li class="nav-item nav-items-hidden">
               <img
-                src="imeges/logo-white.png"
-                class="nav-link nav-link-impulsive"
-                alt="impulsive logo"
+                id="icon2"
+                src="imeges/moon.png"
+                class="nav-link nav-link-moon"
+                alt="moon logo"
               />
             </li>
             <li class="nav-item">
@@ -79,10 +80,9 @@
             </li>
             <li class="nav-item nav-items-hidden">
               <img
-                id="icon"
-                src="imeges/moon.png"
-                class="nav-link nav-link-moon"
-                alt="moon logo"
+                src="imeges/logo-black.png"
+                class="nav-link nav-link-impulsive"
+                alt="impulsive logo"
               />
             </li>
           </ul>
@@ -162,19 +162,21 @@
       </main>
     </section>
     <section class="hero">
-      <picture class="grid-container">
-        <div>1</div>
-        <div>2</div>
-        <div>3</div>
-        <div>4</div>
-        <div class="grid-container-mini">
-          <div>5a</div>
-          <div>5b</div>
-          <div>5c</div>
-          <div>5d</div>
-        </div>
-        <div>6</div>
-      </picture>
+      <main class="container">
+        <picture class="grid-container">
+          <div>1</div>
+          <div>2</div>
+          <div>3</div>
+          <div>4</div>
+          <div class="grid-container-mini">
+            <div>5a</div>
+            <div>5b</div>
+            <div>5c</div>
+            <div>5d</div>
+          </div>
+          <div>6</div>
+        </picture>
+      </main>
     </section>
     <section class="hero">
       <main class="container">
@@ -262,6 +264,12 @@
               <input type="file" id="avatar" name="avatar" />
             </label>
           </fieldset>
+          <fieldset class="date">
+            <label for="date"
+              >Birth date
+              <input type="date" id="date" name="date" />
+            </label>
+          </fieldset>
           <fieldset class="referrer">
             <label for="referrer"
               >How did you know Fajar Nursodiq?
@@ -296,8 +304,9 @@
       </div>
     </section>
     <script src="script.js"></script>
+
     <script>
-      let icon = document.getElementById("icon");
+      let icon = document.getElementById("icon2");
       icon.onclick = function () {
         document.body.classList.toggle("darkmode");
         if (document.body.classList.contains("darkmode")) {
